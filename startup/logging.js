@@ -13,7 +13,7 @@ module.exports = function() {
       )
       
       winston.add(new winston.transports.MongoDB({
-        db: 'mongodb://localhost:27017/vidly',
+        db: 'mongodb+srv://Armin:<.Rmin>@cluster0.japtb.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
         level: 'info',
       }))
       winston.add(new winston.transports.Console({

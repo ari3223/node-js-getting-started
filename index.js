@@ -7,9 +7,11 @@ const joi      = require('joi'),
       express  = require('express'),
       app      = express();
    
-require('./startup/logging')();
+
 require('./startup/db-logic')();
+require('./startup/logging')();
 require('./startup/Routes')(app);
+require('./startup/prod')(app)
 //require('./startup/config')();
      
 
